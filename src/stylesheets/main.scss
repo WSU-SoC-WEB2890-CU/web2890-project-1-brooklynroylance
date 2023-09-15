@@ -1,3 +1,45 @@
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+$primary: #d3571a;
+$secondary: #45a4cf;
+$cream: #EAE5E2;
+
+body{
+    background-color: $cream;
+    .navbar {
+        background-color: $primary !important;
+    }
+    #hero {
+        margin-top: 3.25rem;
+        padding: 4rem;
+        background-color: $primary;
+        background-size: cover;
+    }
+    #transitionA{
+        background-image: url(/images/muddy_tread_white.png);
+        background-size: cover;
+        height: 52vw;
+    }
+    #transitionB {
+        background-image: url(/images/muddy_tread_white.png);
+        background-size: cover;
+        height: 52vw;
+        transform: rotate(180deg) ;
+    }
+    #how {
+        background-color: $cream;
+    }
+    #pros {
+        background-color: $primary;
+        padding-bottom: 2.5rem;
+        border: 2px solid $primary;
+        padding: .25em;
+        margin: -1px;
+    }
+    #footer {
+        background-color: $primary;
+        margin: -1px;
+    }
+}
