@@ -3,7 +3,8 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
 $primary: #d3571a;
-$secondary: #45a4cf;
+$secondary: #56B2F2;
+$secondary_dark: #0079CE;
 $cream: #EAE5E2;
 
 body{
@@ -12,10 +13,24 @@ body{
         background-color: $primary !important;
     }
     #hero {
-        margin-top: 3.25rem;
-        padding: 4rem;
+        margin-top: 5rem;
         background-color: $primary;
-        background-size: cover;
+        background-image: url(/images/jumbotron.jpg);
+        @include media-breakpoint-down (sm) {
+            background-size: cover;
+            min-height: 90vw;
+            background-position: 35%;
+        }
+        @include media-breakpoint-up (sm) {
+            background-size: cover;
+            min-height: 87vw;
+        }
+        @include media-breakpoint-up (md) {
+            border: 6px solid rgb(255, 255, 255);
+            background-image: url(/images/jumbotron_lg.jpg);
+            height: auto;
+            width: 100vw !important;
+        }
     }
     #transitionA{
         background-image: url(/images/muddy_tread_white.png);
@@ -26,20 +41,58 @@ body{
         background-image: url(/images/muddy_tread_white.png);
         background-size: cover;
         height: 52vw;
-        transform: rotate(180deg) ;
+        transform: rotate(180deg);
     }
     #how {
         background-color: $cream;
     }
     #pros {
-        background-color: $primary;
+        background-color: $cream;
         padding-bottom: 2.5rem;
-        border: 2px solid $primary;
         padding: .25em;
         margin: -1px;
+    }
+    #testimonials {
+        background-color: $primary;
+        
+    }
+    #faq {
+        background-color: $primary;
+        margin: -1px;
+        h2 {
+            text-align: center;
+            color: $cream;
+        }
+        .accordion {
+            .accordion-item {
+                background-color: $secondary;
+                h2 {
+                    color: red !important;
+                }
+            }
+        }
     }
     #footer {
         background-color: $primary;
         margin: -1px;
+    }
+    #recents {
+        background-color: $cream;
+        margin: -1px;
+        padding-bottom: 2rem;
+        .card-group {
+            margin-right: .25rem;
+            margin-left: .25rem;
+            
+            .card {
+                background-color: $secondary;
+                border: 5px solid $secondary;
+            }
+            a {
+                background-color: $secondary_dark;
+                width: 100%;
+                color: $cream;
+            }
+        }
     }
 }
