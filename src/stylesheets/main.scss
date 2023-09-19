@@ -16,54 +16,257 @@ body{
         margin-top: 5rem;
         background-color: $primary;
         background-image: url(/images/jumbotron.jpg);
+        background-size: 120vw;
+        height: fit-content;
+        border-bottom: 6px solid $cream;
         @include media-breakpoint-down (sm) {
             background-size: cover;
             min-height: 90vw;
             background-position: 35%;
         }
         @include media-breakpoint-up (sm) {
-            background-size: cover;
-            min-height: 87vw;
+            background-image: url(/images/jumbotron.jpg);
+            background-size: 180vw;
+            background-position: 45%;
+            padding-top: 2.5vw;
+            padding-bottom: 2.5vw;
         }
         @include media-breakpoint-up (md) {
-            border: 6px solid rgb(255, 255, 255);
-            background-image: url(/images/jumbotron_lg.jpg);
-            height: auto;
-            width: 100vw !important;
+            background-size: 100vw;
+            background-position: 45%;
+            padding-top: 5vw;
+            padding-bottom: 5vw;
+        }
+        #form {
+            background-color: rgb($secondary_dark, 50%);
+            border-radius: .25rem;
+            margin-bottom: 2rem;
+        }
+        .slogan {
+            margin-bottom: 2rem;
+            font-size: larger;
+        }
+        .btn {
+            background-color: $secondary;
+            color: $cream;
+            border: 2px solid $secondary_dark;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .transition {
+            text-align: center;
         }
     }
     #transitionA{
         background-image: url(/images/muddy_tread_white.png);
         background-size: cover;
         height: 52vw;
+        margin-top: -1px;
+        margin-bottom: -1px;
+        text-align: center;
+        @include media-breakpoint-up (sm) {
+            background-image: url(/images/muddy_tread_white_lg.png);
+            height: 39vw;
+        }
+        .btn {
+            color: $cream;
+            background-color: $secondary_dark;
+            border: 2px solid $secondary;
+            font-size: 3.5vw;
+            margin-top: -4vw;
+            &:hover {
+                background-color: $secondary;
+                border: 2px solid $secondary_dark;
+            }
+            @include media-breakpoint-up (sm) {
+                font-size: 1.5rem;
+                margin-top: -2.5vw;
+            }
+        }
     }
     #transitionB {
         background-image: url(/images/muddy_tread_white.png);
         background-size: cover;
         height: 52vw;
         transform: rotate(180deg);
+        margin: -1px;
+        @include media-breakpoint-up (sm) {
+            background-image: url(/images/muddy_tread_white_lg.png);
+            height: 39vw;
+        }
     }
     #how {
-        background-color: $cream;
+        background-color: transparent;
+        #intro {
+            background-color: rgb($secondary_dark, 80%);
+            text-align: center;
+            margin-right: 10vw;
+            margin-left: 10vw;
+            margin-top: -20vw;
+            color: $cream;
+            border-radius: .25rem;
+            h2 {
+                padding-bottom: 1rem;
+                padding-top: 1rem;
+            }
+            h4 {
+                padding-bottom: 1rem;
+                padding-right: 1rem;
+                padding-left: 1rem;
+                font-weight: 400;
+            }
+        }
+        img {
+            border: 5px solid $cream;
+            border-radius: 50%;
+            margin-left: 4vw;
+            margin-top: -15.5rem;
+            margin-bottom: 3rem;
+            height: calc(10vw + 90px);
+            @include media-breakpoint-up (md) {
+                margin-top: -22rem;
+            }
+            @include media-breakpoint-up (lg) {
+                margin-top: -28rem;
+            }
+            @include media-breakpoint-up (xl) {
+                margin-top: -37.5rem;
+            }
+        }
+        ul {
+            background-color: $secondary;
+            margin-right: 10vw;
+            margin-left: 10vw;
+            border-radius: .25rem;
+            padding: 1rem;
+            li {
+                list-style-type: none;
+                padding: .25rem;
+                border-radius: .25rem;
+                margin: .25rem;
+            }
+        }  
     }
     #pros {
-        background-color: $cream;
+        background-color: transparent;
         padding-bottom: 2.5rem;
-        padding: .25em;
-        margin: -1px;
+        margin-top: 6rem;
+        margin-bottom: -2rem;
+        img {
+            float: right;
+            clear: none;
+            border: 5px solid $cream;
+            border-radius: 50%;
+            margin-right: 4vw;
+            margin-top: -7rem;
+            margin-bottom: 0;
+            margin-left: 0;
+            height: calc(10vw + 90px);
+            @include media-breakpoint-up (md) {
+                margin-top: -5.5rem;
+            }
+            
+        }
+        #intro {
+            background-color: rgb($secondary_dark, 80%);
+            text-align: center;
+            margin-right: 10vw;
+            margin-left: 10vw;
+            color: $cream;
+            border-radius: .25rem;
+            h2 {
+                padding: 1rem;
+            }
+            h4 {
+                padding: 1rem;
+                font-weight: 400;
+            }
+        }
+        ul {
+            background-color: rgb($secondary, 80%);
+            margin-right: 10vw;
+            margin-left: 10vw;
+            border-radius: .25rem;
+            padding: 1rem;
+            li {
+                list-style-type: circle;
+                padding: .25rem;
+                margin-left: .25rem;
+                border-radius: .25rem;
+                margin: .25rem;
+            }
+        }
     }
     #testimonials {
         background-color: $primary;
-        
+        text-align: center;
+        h2 {
+            text-align: center;
+            color: $cream;
+            margin-bottom: 1.5rem;
+        }
+        .btn {
+            color: $cream;
+            background-color: $secondary_dark;
+            border: 2px solid $secondary;
+            margin-top: 1.5rem;
+            &:hover {
+                background-color: $secondary;
+                border: 2px solid $secondary_dark;
+            }
+            @include media-breakpoint-up (sm) {
+                font-size: 1.5rem;
+            }
+        }
+        #carouselExampleCaptions {
+            margin-right: 10vw;
+            margin-left: 10vw;
+            
+            .carousel-item {
+                text-align: center;
+                background: $cream;
+                padding: 1.5rem;
+                border-radius: .25rem;
+                @include media-breakpoint-down (sm) {
+                    height: 59vw;
+                }
+                @include media-breakpoint-up (sm) {
+                    height: 41vw;
+                }
+                @include media-breakpoint-up (md) {
+                    height: 29vw;
+                }
+                @include media-breakpoint-up (lg) {
+                    height: 24vw;
+                    padding-left: 10vw;
+                    padding-right: 10vw;
+                }
+                @include media-breakpoint-up (xl) {
+                    height: 21vw;
+                    padding-left: 20vw;
+                    padding-right: 20vw;
+                }
+                @include media-breakpoint-up (xxl) {
+                    height: 17vw;
+                    padding-left: 20vw;
+                    padding-right: 20vw;
+                    padding-top: 2rem;
+                }
+                h5 {
+                    margin-top: 1rem;
+                }
+            }
+        }
     }
     #faq {
         background-color: $primary;
-        margin: -1px;
         h2 {
             text-align: center;
             color: $cream;
         }
         .accordion {
+            margin-right: 10vw;
+            margin-left: 10vw;
             .accordion-item {
                 background-color: $secondary;
                 h2 {
@@ -74,11 +277,9 @@ body{
     }
     #footer {
         background-color: $primary;
-        margin: -1px;
     }
     #recents {
         background-color: $cream;
-        margin: -1px;
         padding-bottom: 2rem;
         .card-group {
             margin-right: .25rem;
