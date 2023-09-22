@@ -5,6 +5,7 @@
 $primary: #d3571a; //#d3571a
 $secondary: #56B2F2;
 $secondary_dark: #0079CE; //#0079CE;
+$secondary_light: #8fc6ec;
 $cream: #EAE5E2;
 
 body{
@@ -146,6 +147,7 @@ body{
                 padding: .25rem;
                 border-radius: .25rem;
                 margin: .25rem;
+                color: $secondary_light;
             }
         }  
     }
@@ -153,7 +155,7 @@ body{
         background-color: transparent;
         padding-bottom: 2.5rem;
         margin-top: 6rem;
-        margin-bottom: -2rem;
+        margin-bottom: -4rem;
         img {
             float: right;
             clear: none;
@@ -192,18 +194,70 @@ body{
             border-radius: .25rem;
             padding: 1rem;
             color: $cream;
+            h5 {
+                font-size: 1.35rem;
+                color: $cream;
+            }
             li {
-                list-style-type: circle;
+                list-style-type: none;
                 padding: .25rem;
                 margin-left: .25rem;
                 border-radius: .25rem;
                 margin: .25rem;
+                color: $secondary_light;
             }
+        }
+    }
+    #sellingpoint {
+        background-image: url(/images/blue_car.jpg);
+        background-size: cover;
+        height: 75vw;
+        margin: 0;
+        padding: 0;
+        border-top: 5px solid $cream;
+        border-bottom: 5px solid $cream;
+        @include media-breakpoint-down (sm) {
+            background-size: cover;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+        @include media-breakpoint-up (sm) {
+            height: 55vw;
+        }
+        @include media-breakpoint-up (md) {
+            background-image: url(/images/blue_car_lg.jpg);
+            height: 45vw;
+        }
+        @include media-breakpoint-up (lg) {
+            height: 38vw;
+        }
+        #left {
+            margin-top: 1rem;
+            color: $cream;
+            padding: 1rem;
+            border-radius: .25rem;
+            background-color: rgb($secondary_dark, 50%);
+            max-width: 45rem;
+        }
+        .btn {
+            background-color: $secondary;
+            color: $cream;
+            border: 2px solid $secondary_dark;
+            text-align: center;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+        h5 {
+            font-size: 1.25rem;
+            font-weight: 400;
         }
     }
     #testimonials {
         background-color: $primary;
         text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-top: -3rem;
         h2 {
             text-align: center;
             color: $cream;
