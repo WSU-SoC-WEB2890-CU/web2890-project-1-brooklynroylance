@@ -3,6 +3,7 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
 $primary: #d3571a; //#d3571a
+$primary_dark: #aa420e;
 $secondary: #56B2F2;
 $secondary_dark: #0079CE; //#0079CE;
 $secondary_light: #8fc6ec;
@@ -318,23 +319,72 @@ body{
     }
     #faq {
         background-color: $primary;
+        text-align: center;
         h2 {
             text-align: center;
             color: $cream;
         }
+        a {
+            color: $cream;
+            font-size: 1.15rem;
+        }
         .accordion {
             margin-right: 10vw;
             margin-left: 10vw;
+            margin-top: 1.5rem;
+            margin-bottom: 1.25rem;
+            border-radius: .25rem;
+            border: none;
+            background-color: $secondary;
+            .accordion-button {
+                background-color: $cream;
+                color: rgb($secondary_dark, 80%);
+                font-size: 1.25rem;
+                font-weight: 500;
+            }
             .accordion-item {
-                background-color: $secondary;
-                h2 {
-                    color: red !important;
-                }
+                background-color: rgb($secondary_dark, 50%);
+                border: none;
+                color: $cream;
+                text-align: left;
             }
         }
     }
     #footer {
         background-color: $primary;
+        color: $cream;
+        a {
+            color: $cream;
+        }
+        .logo {
+            text-align: center;
+            width: 100%;
+            padding-bottom: .5rem;
+            img {
+                margin-top: 1rem;
+            }
+        }
+        .candl {
+            margin-top: 1rem;
+            .contact {
+                text-align: right;
+                width: 50%;
+            }
+            ul {
+                list-style-type: none;
+            }
+        }
+        .social {
+            text-align: center;
+            width: 100%;
+            a {
+                text-align: center;
+            }
+            img {
+                height: 35px;
+                margin: .25rem;
+            }
+        }
     }
     #recents {
         background-color: transparent;

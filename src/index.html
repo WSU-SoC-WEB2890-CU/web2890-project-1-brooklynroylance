@@ -336,44 +336,43 @@
     <!-- FAQ Section-->
     <div id="faq">
       <h2>Frequently Asked Questions</h2>
-      <div class="accordion" id="faqaccordion">
+      <div class="accordion" id="accordionFlushExample">
         <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Accordion Item #1
+          <h2 class="accordion-header" id="acheader">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Will Cardeal buy my car if it has cosmetic damage or mechanical issues?
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqaccordion">
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">We are happy to take
+              "less-than-perfect" cars that have body damage, mechanical problems, or
+              excess wear and tear.</div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Accordion Item #2
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Where can I drop off my car when I sell it?
             </button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqaccordion">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">We have locations in all 50 states making it easy for you to deliver your car or have us come pick
+              it up for you.</div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Accordion Item #3
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              How do I know I'm getting the right price for my car?
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqaccordion">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Our offers are very competitive; you'll get more money for your car than a standard dealer trade-in 
+              and we offer price comparisions with other major car dealers so that you can see the difference.</div>
           </div>
         </div>
       </div>
+      <a href="#faq">See More FAQs</a>
     </div>
     <div id="transitionA">
       
@@ -451,40 +450,64 @@
 
     <!-- The Footer -->
     <div id="footer">
-      <img src="images/logo_blue_other.png" alt="cardeal logo" style="width: 7rem;"/>
-      <p><strong>Contact Us</strong></p>
-      <address>
-        <a href="tel:+12003456789">1-200-345-6789</a><br />
-        345 E Washington Street<br />
-        Phoenix, AZ 85000
-      </address>
-      <p><strong>Social Media Links</strong></p>
+      <div id="container" class="footer">
+        <div id="container" class="logo">
+          <a href="#home"><img src="images/logo_blue_other.png" alt="cardeal logo" style="width: 7rem;"/></a>
+        </div>
+        <div class="container candl">
+          <div class="row">
+            <div class="col contact">
+              <h5>Contact Us</h5>
+              <address>
+                <a href="tel:+12003456789">1-200-345-6789</a><br />
+                345 E Washington Street<br />
+                Phoenix, AZ 85000
+              </address>
+            </div>
+            <div class="col">
+              <ul class="links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Branch Locator</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div id="container" class="social">
+            <a href="#"><img src="images/Icons/facebook_cream.png"></a>
+            <a href="#"><img src="images/Icons/linkedin_cream.png"></a>
+            <a href="#"><img src="images/Icons/twitter_cream.png"></a>
+            <a href="#"><img src="images/Icons/youtube_cream.png"></a>
+        </div>
+        <!--<p><strong>Contact Us</strong></p>
+        <address>
+          <a href="tel:+12003456789">1-200-345-6789</a><br />
+          345 E Washington Street<br />
+          Phoenix, AZ 85000
+        </address>
+        <p><strong>Social Media Links</strong></p>
 
-      <ul>
-        <li><a href="#"></a>Facebook</li>
-        <li><a href="#"></a>Linked In</li>
-        <li><a href="#"></a>Twitter</li>
-        <li><a href="#"></a>YouTube</li>
-      </ul>
-      <p>
-        <strong>Additional Links</strong>
-      </p>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Branch Locator</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
+        
+        <p>
+          <strong>Additional Links</strong>
+        </p>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Branch Locator</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
 
-      <p>
-        <span>&copy;</span><span>2021 All rights reserved. <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a></span>
-      </p>
+        <p>
+          <span>&copy;</span><span>2021 All rights reserved. <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a></span>
+        </p> -->
+      </div>
     </div>
     <!--End Of My HTML-->
-    <a href="_contents.html" class="link-primary">Link to the Contents file</a>
-    
-
     <script type="module" src="./javascripts/main.js"></script>
   </body>
 </html>
