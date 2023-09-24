@@ -247,6 +247,10 @@ body{
             text-align: center;
             font-size: 1.5rem;
             margin-top: 1rem;
+            &:hover {
+                background-color: $secondary_dark;
+                border: 2px solid $secondary;
+            }
         }
         h5 {
             font-size: 1.25rem;
@@ -423,6 +427,10 @@ body{
                 .btn {
                     border: 3px solid $secondary_dark;
                     border-radius: .5rem;
+                    &:hover {
+                        background-color: $secondary_dark;
+                        border: 3px solid $secondary;
+                    }
                 }
             }
             a {
